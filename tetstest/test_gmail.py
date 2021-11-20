@@ -29,7 +29,7 @@ class TestGoToGmail:
         found_message = browsers.find_element(By.XPATH, "//*[@id='0'][span]").click()
         sleep(5)
         try:
-            serch_name = browsers.find_element(By.XPATH, "//*[text()='Ирина Карасёва']")
+            serch_name = browsers.find_element(By.XPATH, "//*[text()='Hello world123']")
             return True
         except NoSuchElementException:
             print('Zero element for you')
